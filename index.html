@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro Pessoal</title>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Controle Financeiro Pessoal</h2>
+    
+    <div class="newItem">
+        <div class="form-group">
+            <label for="desc">Descrição:</label>
+            <input type="text" id="desc" placeholder="Descrição da transação">
+        </div>
+        <div class="form-group">
+            <label for="amount">Valor:</label>
+            <input type="number" id="amount" placeholder="Valor da transação">
+        </div>
+        <div class="form-group">
+            <label for="type">Tipo:</label>
+            <select id="type">
+                <option value="Entrada">Entrada</option>
+                <option value="Saída">Saída</option>
+            </select>
+        </div>
+        <button id="btnNew">Adicionar</button>
+    </div>
+
+    <div class="resume">
+        <h3>Resumo Financeiro</h3>
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Tipo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Itens serão inseridos aqui -->
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <strong>Entradas: </strong><span class="incomes">R$ 0.00</span><br>
+            <strong>Saídas: </strong><span class="expenses">R$ 0.00</span><br>
+            <strong>Total: </strong><span class="total">R$ 0.00</span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
